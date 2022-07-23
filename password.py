@@ -15,13 +15,16 @@ banner()
 
 import random 
 
+uppercaser = str(input("Enter your letters >> "))
+digits_input = int(input("Enter your digits >> "))
+symbols_input = input("Enter your symbols >> ")
 
-uppercase_letters = "ABCDEFGHİJKLMNQRSTUVWXYZ"
+uppercase_letters = uppercaser
 lowercase_letters = uppercase_letters.lower()
-digits = "0123456789" 
-symbols = ".-_*/@" 
+digits = digits_input
+symbols = symbols_input
 
-upper, lower, nums, syms = True, True, True, True
+upper, lower, nums, syms =True ,True, True, True
 
 all = ""
 
@@ -38,13 +41,11 @@ print("")
 print("")
 
 
-length = int(input(("Enter how many characters you want: ")))
+length = int(input(("Enter the length of the password >> ")))
 print("")
-amount = int(input("Enter how many passwords to create: "))
+amount = int(input("Enter how many passwords to create >> "))
 
 for x in range(amount):
     password = "".join(random.sample(all, length)) 
     print(password)
 
-
-    
