@@ -17,7 +17,7 @@ import random
 
 uppercaser = str(input("Enter your letters >> "))
 digits_input = int(input("Enter your digits >> "))
-symbols_input = input("Enter your symbols >> ")
+symbols_input = int(input("Enter your symbols >> "))
 
 uppercase_letters = uppercaser
 lowercase_letters = uppercase_letters.lower()
