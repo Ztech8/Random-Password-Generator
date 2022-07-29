@@ -14,8 +14,10 @@ def banner():
 banner()
 
 import random 
+print("")
 
-uppercaser = str(input("Enter your letters >> "))
+
+uppercaser = input("Enter your letters >> ")
 digits_input = int(input("Enter your digits >> "))
 symbols_input = str(input("Enter your symbols >> "))
 
@@ -28,13 +30,13 @@ upper, lower, nums, syms =True ,True, True, True
 
 all = ""
 
-if upper:
+if upper == str:
     all += uppercase_letters 
-if lower: 
+if lower == str: 
     all +=  lowercase_letters 
 if nums: 
     all += digits 
-if syms: 
+if syms == str: 
     all += symbols 
 
 print("")
