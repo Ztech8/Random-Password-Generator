@@ -17,14 +17,11 @@ import random
 print("")
 
 
-uppercaser = input("Enter your letters >> ")
-digits_input = int(input("Enter your digits >> "))
-symbols_input = input("Enter your symbols >> ")
 
-uppercase_letters = uppercaser
+uppercase_letters = ["ABCDEFGHIOPQLNVZXWJKLRTYU"]
 lowercase_letters = uppercase_letters.lower()
-digits = digits_input
-symbols = symbols_input
+digits = (1,2,3,4,5,6,7,8,9)
+symbols = ("!@#$%^&*_?/")
 
 upper, lower, nums, syms =True ,True, True, True
 
