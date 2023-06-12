@@ -5,7 +5,7 @@ def banner():
 | |__   __ _  ___| | _____ _ __ 
 | '_ \ / _` |/ __| |/ / _ \ '__|
 | | | | (_| | (__|   <  __/ |   
-|_| |_|\__,_|\___|_|\_\___|_|   developed by Zthech8 programmer
+|_| |_|\__,_|\___|_|\_\___|_|   developed by Sumerian Code
 
     '''
 
