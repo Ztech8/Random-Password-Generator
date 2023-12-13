@@ -1,4 +1,3 @@
-
 a = '''
        
  /$$$$$$$  /$$$$$$$   /$$$$$$ 
@@ -25,8 +24,8 @@ print("")
 
 uppercase_letters = "ABCDEFGHIOPQLNVZXWJKLRTYU"
 lowercase_letters = uppercase_letters.lower()
-digits = "123456789"
-symbols = "!@#$%^&*_?/"
+digits = "0123456789"
+symbols = "!@#$%^&*_?/\-+"
 
 upper, lower, nums, syms = True, True, True, True
 
