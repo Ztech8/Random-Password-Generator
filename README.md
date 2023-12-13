@@ -1,48 +1,68 @@
-# Random Password Generator
+# Password Generator
 
-This Python script generates random passwords based on the specified criteria such as the length of the password and the types of characters to include.
+## Description
+
+This Python script generates random passwords based on user preferences for length and character sets. It also provides an option to save the generated passwords to a text file.
+
+## Features
+
+- Customizable password length.
+- Inclusion/exclusion of uppercase letters, lowercase letters, digits, and symbols.
+- Option to save generated passwords to a text file.
 
 ## Usage
 
-1. Clone or download the repository to your local machine.
-2. Open a terminal or command prompt and navigate to the directory where the script is located.
-
-### Running the Script
-
-1. Run the script by executing the following command:
+1. Clone the repository to your local machine:
 
    ```bash
-   python random_password_generator.py
+   git clone https://github.com/your-username/password-generator.git
    ```
 
-2. Follow the prompts on the terminal to specify the password criteria:
-   - Enter the length of the password.
-   - Enter how many passwords to generate.
+2. Navigate to the project directory:
 
-3. Once you provide the necessary inputs, the script will generate the requested number of random passwords based on the specified criteria.
+   ```bash
+   cd password-generator
+   ```
 
-## How It Works
+3. Run the script:
 
-The script first defines a function called `banner()` that prints a banner with the developer's name.
+   ```bash
+   python password_generator.py
+   ```
 
-Next, the script imports the `random` module, which is used for generating random passwords.
+4. Follow the prompts to specify password length, amount, and whether to save passwords to a file.
 
-The script allows you to customize the criteria for generating passwords. You can enable or disable the inclusion of uppercase letters, lowercase letters, numbers, and symbols in the generated passwords by setting the corresponding variables (`upper`, `lower`, `nums`, `syms`) to `True` or `False`.
+## Configuration
 
-The script then creates a variable `all` to store the characters based on the enabled criteria. It concatenates the respective character sets based on the enabled criteria.
+- Modify the character sets and flags in the script to customize the types of characters included in generated passwords.
 
-The script prompts the user to enter the desired length of the password and the number of passwords to generate.
+```python
+# Character sets for password generation
+uppercase_letters = "ABCDEFGHIOPQLNVZXWJKLRTYU"
+lowercase_letters = uppercase_letters.lower()
+digits = "0123456789"
+symbols = "!@#$%^&*_?-/+"
 
-Using a loop, the script generates random passwords by selecting characters from the `all` variable using the `random.sample()` function. The selected characters are joined together to form a password.
+# Flags to include/exclude character sets
+upper, lower, nums, syms = True, True, True, True
+```
 
-The generated passwords are then printed to the terminal.
+## Example
 
-## Customization
+```bash
+$ python password_generator.py
 
-You can modify the code to suit your specific needs:
+Enter the length of the password: 12
+Enter how many passwords to create: 5
 
-- Adjust the character sets (e.g., `uppercase_letters`, `lowercase_letters`, `digits`, `symbols`) to include or exclude specific characters.
-- Modify the prompts or add validation for the user inputs.
-- Customize the output format of the generated passwords.
+Generated Passwords:
+1. hG@6UfLbZ*oQ
+2. DnE@9yA0+L6F
+3. 5W7%gRmPfI8e
+4. J3@iBpYzUo9N
+5. x4G^vS7l6R@A
 
-Feel free to modify and integrate this code into your own projects as needed.
+Do you want to save these passwords to a file? (yes/no): yes
+Enter the filename to save passwords (without extension): my_passwords
+Passwords saved to my_passwords.txt
+```
